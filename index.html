@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш Бизнес</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Наш Бизнес</h1>
+        <p>Каталог продуктов и калькуляторы для вашего удобства</p>
+    </header>
+
+    <main class="catalog">
+        <div class="card">
+            <h2>Каталог товаров</h2>
+            <p>Изучите наш ассортимент и найдите то, что вам нужно!</p>
+            <button>Перейти к каталогу</button>
+        </div>
+        <div class="card">
+            <h2>Калькуляторы</h2>
+            <p>Удобные инструменты для расчета стоимости и параметров.</p>
+            <button onclick="toggleCalculator()">Открыть калькулятор</button>
+        </div>
+    </main>
+
+    <div id="calculator" class="calculator" style="display: none;">
+        <h3>Калькулятор</h3>
+        <input id="num1" type="number" placeholder="Число 1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input id="num2" type="number" placeholder="Число 2">
+        <button onclick="calculate()">Рассчитать</button>
+        <p id="result">Результат: </p>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Наш Бизнес. Все права защищены.</p>
+    </footer>
+</body>
+</html>
